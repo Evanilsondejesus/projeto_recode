@@ -64,7 +64,7 @@ public class autenticacao {
  //String consultaSQL = "SELECT * FROM usuarios WHERE email = 'eva@gmail.com'";
  
  
- String consultaSQL = "SELECT * FROM usuarios WHERE email = '" + email +"'";
+ String consultaSQL = "SELECT * FROM usuarios WHERE Email = '" + email +"'";
 
  ResultSet resultado = statement.executeQuery(consultaSQL);
 
@@ -101,7 +101,7 @@ Connection connection = conexao.createConnectionToMysoL();
 Statement statement = connection.createStatement();
 //String consultaSQL = "SELECT * FROM usuarios WHERE email = 'eva@gmail.com' AND senha = '12412916' ";
 
-String consultaSQL = "SELECT * FROM usuarios WHERE email = '" + email +"'"+ "AND senha ="+ "'"+senha+"'";
+String consultaSQL = "SELECT * FROM usuarios WHERE Email = '" + email +"'"+ "AND Senha ="+ "'"+senha+"'";
 
 
 
@@ -122,6 +122,8 @@ System.out.print( "email ou senha não existem ou estão incorreto!!!");
 	
 	
 }else {
+	
+	
 	Userid(email);
 	
 	
@@ -171,7 +173,7 @@ try {
 	 Connection connection = conexao.createConnectionToMysoL();
 
 	   
-	    String insercaoSQL = "INSERT INTO usuarios (email, senha) VALUES (?, ?)";
+	    String insercaoSQL = "INSERT INTO usuarios (Email, Senha) VALUES (?, ?)";
 	    PreparedStatement insercaoStatement = connection.prepareStatement(insercaoSQL);
 	    insercaoStatement.setString(1, email);
 	    insercaoStatement.setInt(2, senha);
@@ -210,7 +212,8 @@ public void Userid(String email) {
 	 try {
 Connection connection = conexao.createConnectionToMysoL();
 Statement statement = connection.createStatement();
-String consultaSQL = "SELECT * FROM usuarios WHERE email = '" + email +"'";
+String consultaSQL = "SELECT * FROM usuarios WHERE Email = '" + email +"'";
+ 
 ResultSet resultado = statement.executeQuery(consultaSQL);
 
 
@@ -218,18 +221,20 @@ ResultSet resultado = statement.executeQuery(consultaSQL);
 		 
 		 
 if(resultado.next()) {
-int valor = resultado.getInt("id");
-//System.out.print("seu chegouuu: "+ valor);
+int valor = resultado.getInt("usuarioID");
+ 
+
 
 home interfaceuser =new home(valor);
-//interfaceuser.Logado();
+interfaceuser.Logado();
 
-
+ 
 
 
 }
 		        
  } catch (Exception e) {
+	
 e.printStackTrace();
 }
 			 

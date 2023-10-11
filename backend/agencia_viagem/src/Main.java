@@ -11,14 +11,22 @@ import autenticacao.user.*;
 
 public class Main {
     
+	
+	/*Necessario usar banco de dado, ative o banco de dados local*/
+	
+	
+	
+	
+	
+	
+	
+	
 public static void main(String[] arg) {
 	  Scanner scanner = new Scanner(System.in);
   
 
 
 autenticacao user = new autenticacao();
-
-
 String email;
 int senha;
 

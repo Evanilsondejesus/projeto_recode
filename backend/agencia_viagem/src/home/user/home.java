@@ -46,6 +46,7 @@ int quantidades = 0;
 
 	
 public home(int valor) {
+
 this.userId = valor;
  Logado();
 }
@@ -58,9 +59,11 @@ this.userId = valor;
 ///para menu para usuario logado
 	
 public void Logado() { 
-	 	
+	 
 quantidades = 0;
+ 
 List<opcaopacote> listaDB =   pacotes.listadepacotes(); 
+
   
  
  System.out.println(".........>Lista de pacotes<...........");

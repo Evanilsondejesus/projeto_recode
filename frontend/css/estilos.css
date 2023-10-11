@@ -1,0 +1,24 @@
+
+.azul_fraco{
+    /* Azul com 50% de transparência */
+    
+    background: rgba(11, 159, 228, 0.959);
+    
+    
+    } 
+    
+    
+a:hover {
+     background: rgba(236, 229, 227, 0.2);
+  
+  }
+  
+  
+.bottom{
+    bottom: 30%;
+    border: 1px solid;
+    position: absolute;
+    
+    
+    
+    }

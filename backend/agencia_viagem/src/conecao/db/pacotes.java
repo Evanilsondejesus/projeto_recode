@@ -23,7 +23,7 @@ public class pacotes {
         try {
             Connection connection = conexao.createConnectionToMysoL();
             Statement statement = connection.createStatement();
-            String consultaSQL = "SELECT nome_pacote, destino, id, valor, valor_total FROM pacotes";
+            String consultaSQL = "SELECT nome_pacote, destino, id_pacote, valor, valor_total FROM pacotes";
             
             
             
@@ -33,7 +33,7 @@ public class pacotes {
      
               String nomePacote = resultado.getString("nome_pacote");
               String destino = resultado.getString("destino");
-              int idpacote = resultado.getInt("id");
+              int idpacote = resultado.getInt("id_pacote");
               int valorTotal = resultado.getInt("valor_total");
               
              opcaopacote usuario = new opcaopacote(nomePacote, destino, valorTotal, idpacote);

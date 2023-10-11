@@ -4,13 +4,33 @@ Documentação: agencia de viagem
 ver pacotes estão com descontos e tudo mais.
 
 
--->BANCO DE DADOS:
 
+
+
+-->BANCO DE DADOS:
+*usuarios: onde são cadastrado todos usuarios
+*pacotes: uma lista do pacotes de viagem, muitos com descontos
+*PacotesUsuarios: lista de pacotes contatado pelo usuarios
 
 
 -->FRONTEND
+home: Uma apresentação com todos os serviços oferecidos, promoção, destinos.
+destinos:  Em cada pacotes tera uma opção de via para o usuario possa ser redirecionado pra pagina de destinos e poder ver mais fotos da possivel viagem, ou entrado na propria pagina de DESTINO e consulta quais são as fotos ou que ele espera da viagem.
+
+promoção: Uma abas das promoções recentes para usuarios
 
 
 
 -->BACKEND
- 
+
+
+ ...Main: onde é gerenciado todos os programa
+...autenticacao > relacionado a longi e cadastro do usuario
+
+...coneccao > tudo que vem dos banco de dado, a lista de PACOTES,conecção
+
+..home> simulando interface grafica do usuario onde gerencia os pacotes contratado do usuario(pacotesUsuarios); e lista de pacotes vinda de do 
+banco de dados de (coneccao);
+
+..>pacote.user
+metodos pra gerencia  pacotes do usuarios no banco de dados(pacotesUsuarios);
