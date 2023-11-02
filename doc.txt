@@ -34,3 +34,29 @@ banco de dados de (coneccao);
 
 ..>pacote.user
 metodos pra gerencia  pacotes do usuarios no banco de dados(pacotesUsuarios);
+
+
+--->JavaWeb 
+ Projeto usando arquitetura MVC, também autenticação do usuario.
+Modelo logico = com todas as tabela prontas, também foi usado TRIGGE, manipula valor de preços,  todas as vezes que  for inserido um desconto o preço final "valorTotal" seja auterado.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
