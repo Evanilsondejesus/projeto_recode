@@ -4,4 +4,12 @@ Projeto Agencia de viagem desenvolvido para  Recorde.
 
 
 ## Agencia de viagem
-Projeto Recorde, usando banco de dados, java, frontend, 
+Um projeto Agencia de viagem, envolvendo diferentes tecnologias 
+
+
+## Tecnologias usandas:
+
+
+
+
+
