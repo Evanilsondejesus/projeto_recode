@@ -7,7 +7,12 @@ Projeto Agencia de viagem desenvolvido para  Recorde.
 Um projeto Agencia de viagem, envolvendo diferentes tecnologias 
 
 
-## Tecnologias usandas:
+### Tecnologias usandas:
+* HTML
+* JavaScript
+* css
+* Boostramp
+* Java para web
 
 
 
