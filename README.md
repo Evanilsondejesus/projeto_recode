@@ -12,7 +12,7 @@ Um projeto **Agencia de viagem** , envolvendo diferentes tecnologias
 * JavaScript
 * css
 * Boostramp
-* Java para web
+* Java (para web)
 
 
 
