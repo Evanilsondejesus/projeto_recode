@@ -15,20 +15,12 @@ Um projeto **Agencia de viagem** , envolvendo diferentes tecnologias
 * Java (para web)
 
 #### DEB
-
-#### DB: não vai ser impotante
-
-  
-### backend
+ 
 
 
-#### frontend
+### SpringBoot
+reformulei meu projeto agencia de viagem  usando Spring BoostBoot, usei Thymilife
 
-
-
-### javaWeb
-** O banco de dados do Spring
-** projetos Spring
 
 
 
