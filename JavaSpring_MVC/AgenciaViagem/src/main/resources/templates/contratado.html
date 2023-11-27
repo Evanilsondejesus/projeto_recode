@@ -1,0 +1,223 @@
+ 
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Contratado</title>
+
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+	crossorigin="anonymous">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+	crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/estilos.css">
+
+	
+	
+
+
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+ 
+</head>
+<body class="bg-dark-subtle">
+ 
+
+
+
+ 
+ <header class="azul_fraco border  border-end-0 border-bottom-1 border-top-0 border-1 border-start-0">
+
+
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="home">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Pacotes contratados</li>
+            </ol>
+          </nav>
+    
+    
+    
+    
+    <h1 class="text-center">Pacotes contratado</h1>
+</header>
+ 
+
+  
+  
+   
+ 
+ 
+<br> 
+ 
+  
+ <h1 th:if="${usuarioID == null}" th:text="${'Esteja logado para ver seus pacotes' }" class="text-center"></h1>
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+   
+   <div class="container-fluid  bg-dark-subtle"  >
+     <h2 test="${not empty sessionScope.user}">Veja  seus pacote aqui contratado</h2> 
+  <div class="d-flex flex-wrap">
+     
+    
+                
+<div class="card me-1 " style="width: 18rem;"  th:each="pacote_user, iterStat : ${pacote_user}">
+
+
+  
+  
+  <img  th:src="${pacote_user.img}">
+ <div class="card-body">
+  <h5 class="card-title" th:text="${pacote_user.destino}"></h5>
+ 
+  
+  
+  
+  
+  </div>
+  
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item"><i class="bi bi-airplane"> 3 novembro</i></li>
+  <li class="list-group-item"><i class="bi bi-people-fill"></i> acompanhante</li>
+  <li class="list-group-item"><i class="bi bi-eye-fill"></i>: <a href=""> ver</a> </i></li>
+  </ul>
+  
+  
+   <div class="card-body">
+ 
+ 
+  <a  class="btn  btn-danger" data-th-data-id="${pacote_user.id}" onclick="deletarElemento(this)" >REMOVER</a>
+  
+  
+  
+   
+   </div>
+  </div>
+  
+  </jstl:forEach> 
+ </div>
+</div>
+	  
+     
+     
+     
+      
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+    
+     
+   
+   
+   
+   
+   
+   
+   
+    
+
+
+<footer class="container-fluid azul_fraco text-light  text-center border border-1 ">
+
+    <div class="w-50 m-auto">
+      Free<span class="text-danger">Spirit</span><br>
+      
+      "Free to fly"<br>
+    
+    </div>
+    @Site desenvolvido por Evanilson, todos direitos reservados
+    </footer>
+    
+   
+   
+   
+ <script>
+	 
+	 function deletarElemento(botao){
+	 	const id = botao.getAttribute('data-id');
+	 	 
+	 	 
+		 fetch('/seuRecurso/' + id, {
+                method: 'DELETE'
+            })
+            
+		 
+		   window.location.replace("home");
+		 
+		 
+		 
+		 
+		 
+		 
+	 }
+	 
+	 
+	 
+ </script>
+ 
+   
+   
+    
+
+
+
+
+
+
+</body>
+</html>
