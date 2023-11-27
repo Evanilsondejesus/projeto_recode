@@ -16,10 +16,38 @@ Um projeto **Agencia de viagem** , envolvendo diferentes tecnologias
 
 #### DEB
 
+#### DB: não vai ser impotante
+
+  
+### backend
+
+
+#### frontend
 
 
 
-####
+### javaWeb
+** O banco de dados do Spring
+** projetos Spring
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
