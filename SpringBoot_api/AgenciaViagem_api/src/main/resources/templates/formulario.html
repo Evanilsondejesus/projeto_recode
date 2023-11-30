@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Outros cabeçalhos -->
+</head>
+<body>
+
+<form th:action="@{/processarFormulario}" th:object="${usuario}" method="post">
+    <label for="nome">Senha:</label>
+    <input type="text" id="senha" th:field="*{senha}" /><br>
+    
+  <label for="email">Email:</label>
+    <input type="text" id="email" th:field="*{email}" />
+
+    <button type="submit">Enviar</button>
+</form>
+
+<!-- Outro conteúdo da página -->
+
+</body>
+</html>
